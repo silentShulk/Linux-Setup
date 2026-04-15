@@ -2,19 +2,16 @@
 
 # Downloading repos
 mkdir ~/Repos
-cd ~/Repos
+mkdir ~/MyRepos
+
+cd ~/MyRepos
 
 gh repo clone silentShulk/MyZed
-gh repo clone silentShulk/Nier-Automata-Modding-Linux
-
-
+gh repo clone silentShulk/Accord-Timeline-Alterer
+gh repo clone silentShulk/Linux-Setup
 
 # Downloading dotfiles repo
-cd ~/ 
-
-gh repo clone silentShulk/Hyprland-Rices
-
-
+gh repo clone silentShulk/Hyprland-Dots
 
 # Setting up manim venv
 uv python install
