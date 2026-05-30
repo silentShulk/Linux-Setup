@@ -70,6 +70,7 @@ gh auth login	# Login with github after installing github cli
 sudo pacman -S --needed \
 	lact \
 	mangohud \
+  goverlay \
 	gamescope 
 
 sudo systemctl enable --now lactd
