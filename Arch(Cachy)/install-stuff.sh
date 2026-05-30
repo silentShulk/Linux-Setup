@@ -23,7 +23,8 @@ sudo pacman -S --needed \
 	zen-browser-bin \
 	chromium \
 	steam \
-	discord 
+	discord \
+  wine
 
 # Window manager / Desktop environment
 sudo pacman -S --needed \
@@ -47,7 +48,6 @@ sudo pacman -S --needed \
 	pipewire \
 	alsa-utils \
 	alsa-plugins \
-	amberol \
 	swaync \
 	bottom 
 
