@@ -49,7 +49,8 @@ sudo pacman -S --needed \
 	alsa-utils \
 	alsa-plugins \
 	swaync \
-	bottom 
+	bottom \
+  protonplus
 
 # Coding
 sudo pacman -S --needed \
