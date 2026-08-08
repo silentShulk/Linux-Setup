@@ -2,7 +2,8 @@
 
 # General update
 if ! arch-update; then
-    echo "no-cachy :("
+    echo "\n\nno-cachy :(\n\n"
+
     sudo pacman -Syu
     yay -Syu || paru -Syu
 fi
@@ -17,6 +18,7 @@ sudo pacman -S --needed \
 	paru
 
 
+
 # Terminal, Web Browser(s), Game launcher, Internet Messanges
 sudo pacman -S --needed \
 	ghostty \
@@ -24,7 +26,7 @@ sudo pacman -S --needed \
 	chromium \
 	steam \
 	discord \
-  wine
+  	wine
 
 # Window manager / Desktop environment
 sudo pacman -S --needed \
@@ -32,15 +34,15 @@ sudo pacman -S --needed \
 	hyprsunset \
 	hyprlock \
 	hyprshot \
-  hyprpicker \
-  hyprpolkitagent \
+  	hyprpicker \
+  	hyprpolkitagent \
 	xdg-desktop-portal-hyprland \
-  swaync \
-  swww \
-	waybar \
+  	swaync \
+  	swww \
+	waybar-cava \
 	rofi \
-  wlogout \
-  cava
+  	wlogout \
+  	cava
 
 # Utils
 sudo pacman -S --needed \
@@ -50,11 +52,12 @@ sudo pacman -S --needed \
 	alsa-plugins \
 	swaync \
 	bottom \
-  protonplus
+  	protonplus
 
 # Coding
 sudo pacman -S --needed \
 	zed \
+	vscodium \
 	github-cli \
 	uv \
 	texlive-bin \
@@ -67,19 +70,17 @@ sudo pacman -S --needed \
 
 gh auth login	# Login with github after installing github cli
 
-# AMD Adrenalin substitutes
+# GPU Tools substitutes
 sudo pacman -S --needed \
 	lact \
 	mangohud \
-  goverlay \
-	gamescope 
+  	goverlay \
+	gamescope \
+	gamemode \
+	nvidia-settings \    # NVIDIA Specific
+	nvidia-utils    # NVIDIA Specific
 
 sudo systemctl enable --now lactd
-
-# Nvidia App substitutes
-sudo pacman -S --needed \
-	nvidia-settings \
-	nvidia-utils 
 
 # Other suff
 sudo pacman -S --needed \
@@ -88,8 +89,7 @@ sudo pacman -S --needed \
 	nwg-look \
 	obs-studio \
 	kdeconnect \
-	obsidian \
-	gemini-cli
+	obsidian 
 
 
 
@@ -103,7 +103,7 @@ paru -S --needed \
 
 
 # Other packages
-sh -c "$(curl -sS https://vencord.dev/install.sh)"    			          # Vencord
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh    	  # Rust
-curl -sS https://starship.rs/install.sh | sh				                  # Starship
-git clone https://github.com/NvChad/starter ~/.config/nvim && nvim	  # NvChad
+sh -c "$(curl -sS https://vencord.dev/install.sh)"    		      # Vencord
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh        # Rust
+curl -sS https://starship.rs/install.sh | sh		              # Starship
+git clone https://github.com/NvChad/starter ~/.config/nvim && nvim    # NvChad
