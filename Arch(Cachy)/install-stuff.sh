@@ -39,7 +39,6 @@ sudo pacman -S --needed \
 	xdg-desktop-portal-hyprland \
   	swaync \
   	swww \
-	waybar-cava \
 	rofi \
   	wlogout \
   	cava
@@ -94,6 +93,10 @@ sudo pacman -S --needed \
 
 
 # AUR packages
+
+# Window manager / Desktop environment
+paru -S --needed \
+	waybar-cava
 
 # Coding
 paru -S --needed \
