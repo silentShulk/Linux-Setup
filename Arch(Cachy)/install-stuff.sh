@@ -26,7 +26,7 @@ sudo pacman -S --needed \
 	chromium \
 	steam \
 	discord \
-  	wine
+  wine
 
 # Window manager / Desktop environment
 sudo pacman -S --needed \
@@ -34,14 +34,16 @@ sudo pacman -S --needed \
 	hyprsunset \
 	hyprlock \
 	hyprshot \
-  	hyprpicker \
-  	hyprpolkitagent \
+  hyprpicker \
+  hyprpolkitagent \
+  hyprshutdown \
 	xdg-desktop-portal-hyprland \
-  	swaync \
-  	swww \
+  swaync \
+  swayosd \
+  swww \
 	rofi \
-  	wlogout \
-  	cava
+  wlogout \
+  cava
 
 # Utils
 sudo pacman -S --needed \
@@ -51,7 +53,7 @@ sudo pacman -S --needed \
 	alsa-plugins \
 	swaync \
 	bottom \
-  	protonplus
+  protonplus
 
 # Coding
 sudo pacman -S --needed \
@@ -73,7 +75,7 @@ gh auth login	# Login with github after installing github cli
 sudo pacman -S --needed \
 	lact \
 	mangohud \
-  	goverlay \
+  goverlay \
 	gamescope \
 	gamemode \
 	nvidia-settings \    # NVIDIA Specific
