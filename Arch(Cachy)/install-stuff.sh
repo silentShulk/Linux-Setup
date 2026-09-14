@@ -26,7 +26,7 @@ sudo pacman -S --needed \
 	chromium \
 	steam \
 	discord \
-  wine
+  	wine
 
 # Window manager / Desktop environment
 sudo pacman -S --needed \
@@ -34,16 +34,13 @@ sudo pacman -S --needed \
 	hyprsunset \
 	hyprlock \
 	hyprshot \
-  hyprpicker \
-  hyprpolkitagent \
-  hyprshutdown \
+  	hyprpicker \
+  	hyprpolkitagent \
+  	hyprshutdown \
 	xdg-desktop-portal-hyprland \
-  swaync \
-  swayosd \
-  swww \
-	rofi \
-  wlogout \
-  cava
+  	awww \
+  	cava \
+  	quickshell
 
 # Utils
 sudo pacman -S --needed \
@@ -51,7 +48,6 @@ sudo pacman -S --needed \
 	pipewire \
 	alsa-utils \
 	alsa-plugins \
-	swaync \
 	bottom \
   protonplus
 
@@ -68,8 +64,6 @@ sudo pacman -S --needed \
 	pango \
 	arduino-cli \
 	arduino-language-server 
-
-gh auth login	# Login with github after installing github cli
 
 # GPU Tools substitutes
 sudo pacman -S --needed \
@@ -95,10 +89,6 @@ sudo pacman -S --needed \
 
 
 # AUR packages
-
-# Window manager / Desktop environment
-paru -S --needed \
-	waybar-cava
 
 # Coding
 paru -S --needed \
