@@ -42,6 +42,12 @@ sudo pacman -S --needed \
   	cava \
   	quickshell
 
+# Fonts / Icons
+sudo pacman -S --needed \
+	ttf-jetbrainsmono-nerd \
+	ttf-material-symbols-variable \
+	papirus-icon-theme
+
 # Utils
 sudo pacman -S --needed \
 	imv \
@@ -49,7 +55,7 @@ sudo pacman -S --needed \
 	alsa-utils \
 	alsa-plugins \
 	bottom \
-  protonplus
+  	protonplus
 
 # Coding
 sudo pacman -S --needed \
@@ -69,7 +75,7 @@ sudo pacman -S --needed \
 sudo pacman -S --needed \
 	lact \
 	mangohud \
-  goverlay \
+  	goverlay \
 	gamescope \
 	gamemode \
 	nvidia-settings \    # NVIDIA Specific
@@ -84,7 +90,8 @@ sudo pacman -S --needed \
 	nwg-look \
 	obs-studio \
 	kdeconnect \
-	obsidian 
+	obsidian \
+	pwvucontrol
 
 
 
